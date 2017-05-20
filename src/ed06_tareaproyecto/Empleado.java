@@ -6,15 +6,24 @@
 package ed06_tareaproyecto;
 
 /**
- *
+ * Una clase para definir los datos de cada empleado.
  * @author ED06
+ * @Version 1.0
  */
+
+
 public class Empleado {
-    private String dni;
-    private String nombre;
-    private String direccion;
-    private String cargo;
-    private int numHijos;
+    private String dni;        //Atributo DNI
+    private String nombre;     //Atributo Nombre
+    private String direccion;  //Atributo Direccion
+    private String cargo;      //Atributo Cargo 
+    private int numHijos;      //Atributo Numero de hijos
+    
+ /**
+  * Metodo constructor al cual se le pasan dos argumentos.
+  * @param dni     //Dni del empleado
+  * @param nombre  //Nombre del empleado
+  */   
     
     public Empleado (String dni, String nombre){
         this.dni=dni;
@@ -25,8 +34,8 @@ public class Empleado {
     
     /**
      *
-     * @param base the value of base
-     * @return the int
+     * @param base Metodo que calcula el sueldo dependiendo del cargo que desepeña
+     * @return Devuelve un valor 
      */
     public int calcula_sueldo(int base){
         int total=base;
@@ -41,42 +50,48 @@ public class Empleado {
     }
 
     /**
-     * @return the dni
+     * Metodo get que nos devuelve el dni del empleado.
+     * @return Devuelve el DNI.
      */
     public String getDni() {
         return dni;
     }
 
     /**
-     * @return the nombre
+     * Metodo get que nos devuelve el nombre del empleado.
+     * @return Devuelve el nombre.
      */
     public String getNombre() {
         return nombre;
     }
 
     /**
-     * @param direccion the direccion to set
+     * Metodo set que nos muestra la direccion del empleado.
+     * @param direccion Muestra la direccion.
      */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
     /**
-     * @return the cargo
+     * Metodo get que nos devuelve el cargo.
+     * @return Devuelve el cargo.
      */
     public String getCargo() {
         return cargo;
     }
 
     /**
-     * @return the numHijos
+     * Metodo get que nos devuelve el numero de hijos.
+     * @return Devuelve el numero de hijos.
      */
     public int getNumHijos() {
         return numHijos;
     }
 
     /**
-     * @param numHijos the numHijos to set
+     * Metodo set que nos muetra el numero de hijos.
+     * @param numHijos Muestra el numero de hijos.
      */
     public void setNumHijos(int numHijos) {
         this.numHijos = numHijos;
